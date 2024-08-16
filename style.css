@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    padding: 10px; 
+}
+.counter{ 
+    display: flex;
+    flex-direction: row;
+    gap: 4rem;
+    justify-content: center; 
+    align-items: center;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+    color: black;
+}
+
+#timer , #levels{
+    background-color: #e0e0e0;
+    border-radius: 20px;
+    border: .8px solid black;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    font-size: 1.5rem; 
+    font: bold;
+    padding: .5rem;
+}
+
+#timer{
+    margin-right: 1rem;
+    font-size: 2rem;
+}
+#image {
+    padding-right: 1rem;
+    height: 2.5rem;
+    width: 2.5rem;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    border-color: black; 
+    padding: 10px;
+    background-color: #CFCFD0 ;
+    border: black solid 2px;
+    width: 1fr; 
+    align-items: center;
+    justify-items: center;
+}
+
+
+.container button:active{
+    background-color: #e0e0e0;
+}
+
+#buttonsContainer button{
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: 'Arial', sans-serif;
+    cursor: pointer;
+}
+.button-row {
+    display: flex;
+}
+
+button {
+    width: 40px;
+    height: 40px;
+}
+
+@media screen and (max-width: 1050px) {
+    .counter {
+        gap: 3rem; 
+    }
+
+    #timer, #levels {
+        font-size: 1rem; 
+    }
+
+    button {
+        width: 20px; 
+        height: 20px;
+    }
+
+    #buttonsContainer button{
+        font-size: 1rem;
+    }
+}
